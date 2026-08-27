@@ -1,6 +1,7 @@
-elements = ["Keep","Remove","Keep","Remove","Keep"]
-nouveauElements = []
-for x in range(0,len(elements),2) :
-    nouveauElements.append(elements[x])
+def remove_every_other(my_list):
+    return my_list[::2]
 
-print(nouveauElements)
+elements = ["Keep", "Remove", "Keep", "Remove", "Keep","Remove", "Keep", "Remove", "Fin"]
+
+
+print(remove_every_other(elements))
