@@ -1,14 +1,6 @@
-average_car = 25 # miles per gallon
-nearest_pump = 50 # miles to the nearest pump
-gallons = 2 # gallons of fuel left
+def zero_fuel(distance_to_pump, mpg, fuel_left):
+    return True if mpg * fuel_left >= distance_to_pump else False
+     
 
+print(zero_fuel(50, 25, 2))
 
-def make_it():
-    max_distance = gallons * average_car
-    if max_distance >= nearest_pump:
-        return True
-    else:
-        return False
-
-print(make_it())
-    
